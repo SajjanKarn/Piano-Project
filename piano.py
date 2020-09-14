@@ -13,83 +13,10 @@ from pygame import mixer
 mixer.init()
 
 class Ui_MainWindow(object):
-
-    def play_btnA(self):
-        mixer.music.load('1.wav')
+    
+    def play_music(self, music_filename):
+        mixer.music.load(music_filename)
         mixer.music.play()
-
-    def play_btnB(self):
-        mixer.music.load('2.wav')
-        mixer.music.play()
-
-    def play_btnC(self):
-        mixer.music.load('3.wav')
-        mixer.music.play()
-
-
-    def play_btnD(self):
-        mixer.music.load('4.wav')
-        mixer.music.play()
-
-
-    def play_btnE(self):
-        mixer.music.load('5.wav')
-        mixer.music.play()
-
-
-    def play_btnF(self):
-        mixer.music.load('6.wav')
-        mixer.music.play()
-
-
-    def play_btnG(self):
-        mixer.music.load('7.wav')
-        mixer.music.play()
-
-
-    def play_btnH(self):
-        mixer.music.load('8.wav')
-        mixer.music.play()
-
-
-    def play_btnI(self):
-        mixer.music.load('9.wav')
-        mixer.music.play()
-
-
-    def play_btnJ(self):
-        mixer.music.load('10.wav')
-        mixer.music.play()
-
-
-    def play_btnK(self):
-        mixer.music.load('11.wav')
-        mixer.music.play()
-
-
-    def play_btnL(self):
-        mixer.music.load('12.wav')
-        mixer.music.play()
-
-
-    def play_btnM(self):
-        mixer.music.load('13.wav')
-        mixer.music.play()
-
-
-    def play_btnN(self):
-        mixer.music.load('14.wav')
-        mixer.music.play()
-
-
-
-    def play_btnO(self):
-        mixer.music.load('15.wav')
-        mixer.music.play()
-
-
-
-
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -313,25 +240,21 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        self.btnA.clicked.connect(self.play_btnA)
-        self.btnB.clicked.connect(self.play_btnB)
-        self.btnC.clicked.connect(self.play_btnC)
-        self.btnD.clicked.connect(self.play_btnD)
-        self.btnE.clicked.connect(self.play_btnE)
-        self.btnF.clicked.connect(self.play_btnF)
-        self.btnG.clicked.connect(self.play_btnG)
-        self.btnH.clicked.connect(self.play_btnH)
-        self.btnI.clicked.connect(self.play_btnI)
-        self.btnJ.clicked.connect(self.play_btnJ)
-        self.btnK.clicked.connect(self.play_btnK)
-        self.btnL.clicked.connect(self.play_btnL)
-        self.btnM.clicked.connect(self.play_btnM)
-        self.btnN.clicked.connect(self.play_btnN)
-        self.btnO.clicked.connect(self.play_btnO)
-
-
-
-
+        self.btnA.clicked.connect(self.play_music("1.wav"))
+        self.btnB.clicked.connect(self.play_music("2.wav"))
+        self.btnC.clicked.connect(self.play_music("3.wav"))
+        self.btnD.clicked.connect(self.play_music("4.wav"))
+        self.btnE.clicked.connect(self.play_music("5.wav"))
+        self.btnF.clicked.connect(self.play_music("6.wav"))
+        self.btnG.clicked.connect(self.play_music("7.wav"))
+        self.btnH.clicked.connect(self.play_music("8.wav"))
+        self.btnI.clicked.connect(self.play_music("9.wav"))
+        self.btnJ.clicked.connect(self.play_music("10.wav"))
+        self.btnK.clicked.connect(self.play_music("11.wav"))
+        self.btnL.clicked.connect(self.play_music("12.wav"))
+        self.btnM.clicked.connect(self.play_music("13.wav"))
+        self.btnN.clicked.connect(self.play_music("14.wav"))
+        self.btnO.clicked.connect(self.play_music("15.wav"))
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
